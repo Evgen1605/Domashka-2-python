@@ -3,15 +3,15 @@
 # Ввод: 1 1 0 0 0 -> Вывод: 2
 
 monet = int(input('Введите кол-во монет: '))
-reshka = 0
-gerb = 0
+tails = 0
+emblem = 0
 for i in range(monet):
     x = int(input('Введите 0 или 1: '))
     if x == 0:
-        reshka += 1
+        tails += 1
     else:
-        gerb += 1
-if reshka < gerb:
-    print(f'Нужно перевернуть решку {reshka} раз')
+        emblem += 1
+if tails < emblem:
+    print(f'Нужно перевернуть решку {tails} раз')
 else:
-    print(f'Нужно перевернуть герб {gerb} раз')
+    print(f'Нужно перевернуть герб {emblem} раз')
